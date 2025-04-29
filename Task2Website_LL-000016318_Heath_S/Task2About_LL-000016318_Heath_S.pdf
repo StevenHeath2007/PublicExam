@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolsa Technologies - About Us</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="header-container">
+            <div class="header-logo-container">
+                <a href="index.html"><img src="Capture.PNG"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="appointment.html">Book an appointment</a></li>
+                <li><a href="repair.html">Book a repair</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="carbonFootprint.html">Carbon Footprint</a></li>                    
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="login.html">Log In/Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+        <div class="main-container">
+            <img src="./Assets/15cd5403e09a4a11987b346ed54b79caccc98079-1000x666.avif">
+            <div class="box-text-one">
+                <p style="font-size: 150%; text-align: center;"><b><u>Who are we?</u></b></p>
+                <p style="text-align: center;">Rolsa Technologies is a company that specialises in green technology, specifically solar panel installation, electric vehicle charging stations and smart home management systems. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur dolor excepturi hic, praesentium architecto nisi deleniti tempora saepe neque nulla! Ullam quaerat odit nisi? Veritatis eaque excepturi dolore.</p>
+            </div>
+            <div class="box-text-two">
+                <p style="font-size: 150%; text-align: center;"><b><u>What can you expect from us?</u></b></p>
+                <p style="text-align: center;">You can expect us to keep selling green products that help keep CO<sup>2</sup> emissions out of the air and to keep bettering the environment in the future. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorem architecto quae, suscipit enim, voluptatem vel quis eum quam harum ducimus nulla doloribus corrupti inventore molestias repellendus facere blanditiis minima!</p>
+            </div>
+            <div class="box-text-three">
+                <p style="font-size: 150%; text-align: center;"><b><u>How to reduce your carbon footprint</u></b></p>
+                <p style="text-align: center;">There are multiple different ways to reduce your carbon footprint including:</p>
+                <p>Driving a fuel-efficient or electric vehicle</p>
+                <p>Insulate your home to reduce heating and cooling needs</p>
+                <p>Turn off lights and unplug devices when not in use</p>
+                <p>Reduce, reuse and recycle materials whenever possible and many more</p>
+                
+            </div>
+            <div class="ev-map">
+                <p style="font-size: 150%; text-align: center;"><b><u>Map for EV charging stations</u></b></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.982425252299!2d-3.0198864229296!3d53.397254270912796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b26df3c43b0b9%3A0x1005b69b1d2eaf0a!2sWirral%20Met%20College%2C%20Twelve%20Quays%20Campus!5e0!3m2!1sen!2suk!4v1742831547112!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <footer class="footer-container">
+            <p>Contact Us: 25789416342</p>
+            <p class="email-text">E-mail: rolsatech@rolsatechnologies.co.uk</p>
+            <p class="copyright-text">© Rolsa Technologies 2025</p>
+        </footer>
+</body>
+</html>

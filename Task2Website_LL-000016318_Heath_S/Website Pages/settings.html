@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolsa Technologies - Settings</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body.light{
+            background-color: #c7d47c;
+        }
+
+        body.dark{
+            background-color: #121212;
+            color: #ffffff;
+        }
+        body.none-setting{
+            background-color: #c7d47c;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="header-container">
+            <div class="header-logo-container">
+                <a href="index.html"><img src="/Assets/Capture.PNG"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="appointment.html">Book an appointment</a></li>
+                <li><a href="repair.html">Book a repair</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="carbonFootprint.html">Carbon Footprint</a></li>                    
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="login.html">Log In/Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-appointment-container">
+        <form action="settings.html" id="settings-form">
+            <div style="margin-bottom: 15px;">
+                <label>
+                    Select Theme:
+                    <select id="theme-select">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </label>
+            </div>
+            <div style="margin-top: 15px;">
+                <label>
+                    Adjust colours for colour-blindness
+                    <select id="colour-blindness-select">
+                        <option value="none-setting">None</option>
+                        <option value="protanomaly">Protonomaly</option>
+                        <option value="deuteranomaly">Deuteranomaly</option>
+                        <option value="tritanomaly">Tritanomaly</option>
+                    </select>
+                </label>
+            </div>
+            <button style="margin-top: 15px; background-color: #19381f; color: white; text-align: center; padding: 15px; border-radius: 10%; margin-left: 10px; height: 50px; width: 175px;" type="submit">Save Settings</button>
+        </form>
+        <footer class="footer-container" style="margin-top: 700px;">
+            <p>Contact Us: 25789416342</p>
+            <p class="email-text">E-mail: rolsatech@rolsatechnologies.co.uk</p>
+            <p class="copyright-text">© Rolsa Technologies 2025</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

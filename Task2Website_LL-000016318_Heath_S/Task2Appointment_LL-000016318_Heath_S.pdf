@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolsa Technologies - Book An Appointment</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+            background-color: #c7d47c;
+        }
+
+        button{
+            cursor: pointer;
+        }
+
+        .appointment-search {
+            position: relative;
+            width: 300px;
+        }
+        #appointmentsearchResults{
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            max-height: 200px;
+            overflow-y: auto;
+            position: absolute;
+            width: 100%;
+            background: white;
+            display: none;
+            z-index: 999;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 5px;
+        }
+        #appointmentsearchResults {
+            padding: 8px;
+            cursor: pointer;
+        }
+        #appointmentsearchResults:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="header-container">
+            <div class="header-logo-container">
+                <a href="index.html"><img src="Capture.PNG"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="appointment.html">Book an appointment</a></li>
+                <li><a href="repair.html">Book a repair</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="carbonFootprint.html">Carbon Footprint</a></li>                    
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="login.html">Log In/Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+        <div class="main-appointment-container">
+            <p style="font-size: 1.5rem;">Booking ID:</p>
+            <form action="/appointment.html">
+                <div>
+                    <label for="input-password">Input Password:</label>
+                    <input type="text" required>
+                    <button type="submit">Submit</button>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <label for="input-appointment">Input Appointment Type:</label>
+                    <select name="appointments" id="appointments">
+                        <option value="video">Video</option>
+                        <option value="inPerson">In Person</option>
+                    </select>
+                </div>
+
+                <div class="appointment-search" style="margin-top: 15px;">
+                    <label for="input-location">(If in person) Select Location:</label>
+                    <input type="text" placeholder="Select Location" id="appointment-location" onkeyup="appointmentsearchFunction()" name="location" required>
+                    <button type="submit">
+                        <img src="Assets/54481.png" style="float: left; height: 12.5px; width: 12.5px;">
+                    </button>
+                    <div id="appointmentsearchResults"></div>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <label for="input-date">Input Date and Time:</label>
+                    <input type="datetime-local" required>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <button type="submit" style="background-color: #19381f; color: white; text-align: center; padding: 15px; border-radius: 10%; margin-left: 10px; height: 50px; width: 175px;">Create Appointment</button>
+                </div>
+            </form>
+            <footer class="footer-container" style="margin-top: 510px;">
+                <p>Contact Us: 25789416342</p>
+                <p class="email-text">E-mail: rolsatech@rolsatechnologies.co.uk</p>
+                <p class="copyright-text">© Rolsa Technologies 2025</p>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>

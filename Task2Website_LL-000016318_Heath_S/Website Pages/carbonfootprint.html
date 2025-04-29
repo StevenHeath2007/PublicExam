@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolsa Technologies - Carbon Footprint</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+            background-color: #c7d47c;
+        }
+
+        #hiddenCarbon {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #c7d47c;
+        }
+
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body class="light">
+    <nav>
+        <div class="header-container">
+            <div class="header-logo-container">
+                <a href="index.html"><img src="/Assets/Capture.PNG"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="appointment.html">Book an appointment</a></li>
+                <li><a href="repair.html">Book a repair</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="carbonFootprint.html">Carbon Footprint</a></li>                    
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="login.html">Log In/Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+        <div class="main-appointment-container">
+            <form action="carbonfootprint.html">
+                <div>
+                    <label for="input-password-carbon">Input Password</label>
+                    <input type="text" id="input-username-carbon" required>
+                    <button type="submit">Submit</button>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <button id="toggleButton" type="button" style="background-color: #19381f; color: white; text-align: center; padding: 15px; border-radius: 10%; margin-left: 10px; height: 50px; width: 175px;">Start</button>
+                </div>
+
+                <div id="hiddenCarbon">
+                    <div>
+                        <label for="carbon-electric">Input your monthly electric bill: £</label>
+                        <input type="number" id="carbon-electric" required>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <label for="carbon-gas">Input your monthly gas bill: £</label>
+                        <input type="number" id="carbon-gas" required>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <label for="carbon-oil">Input your monthly oil bill: £</label>
+                        <input type="number" id="carbon-oil" required>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <label for="carbon-mileage">Input your mileage this year:</label>
+                        <input type="number" id="carbon-mileage" required>
+                        <label for="miles">miles</label>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <label for="carbon-four-or-less">Input the number of flights you've taken in the past year (4 hours or less):</label>
+                        <input type="number" id="carbon-four-or-less" required>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <label for="carbon-four-or-more">Input the number of flights you've taken in the past year (4 hours or more):</label>
+                        <input type="number" id="carbon-four-or-more" required>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <label for="carbon-newspaper">Do you recycle newspaper?</label>
+                        <select name="newspaper" id="newspaper">
+                            <option value="carbon-yes">Yes</option>
+                            <option value="carbon-no">No</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <label for="carbon-aluminium-tin">Do you recycle aluminium and tin?</label>
+                        <select name="aluminium-tin" id="aluminium-tin">
+                            <option value="carbon-yes-two">Yes</option>
+                            <option value="carbon-no-two">No</option>
+                        </select>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <button onclick="calculate()" type="button" style="background-color: #19381f; color: white; text-align: center; padding: 15px; border-radius: 10%; margin-left: 10px; height: 50px; width: 175px;">Calculate</button>
+                    </div>
+
+                    <p id="carbon-footprint"></p>
+                </div>
+            </form>
+            <footer class="footer-container" style="margin-top: 700px;">
+                <p>Contact Us: 25789416342</p>
+                <p class="email-text">E-mail: rolsatech@rolsatechnologies.co.uk</p>
+                <p class="copyright-text">© Rolsa Technologies 2025</p>
+            </footer>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
