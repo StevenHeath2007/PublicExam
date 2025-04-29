@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolsa Technologies - Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        input[type="checkbox"] {
+            accent-color: #99aa38;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="header-container">
+            <div class="header-logo-container">
+                <a href="index.html"><img src="/Assets/Capture.PNG"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="appointment.html">Book an appointment</a></li>
+                <li><a href="repair.html">Book a repair</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="carbonFootprint.html">Carbon Footprint</a></li>                    
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="login.html">Log In/Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+        <div class="sidenav" style="z-index: 1;">
+            <h2 style="color: white;">Filters</h2>
+            <div class="shop-filter-buttons">
+                <div>
+                    <input type="checkbox" id="shop-male"><label for="shop-male">Male</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="shop-female"><label for="shop-female">Female</label>
+                </div>
+            </div>
+            <h3 style="color: white; margin-bottom: -1%;">Colours</h3>
+            <div class="shop-filter-buttons">
+                <div>
+                    <input type="checkbox" id="shop-grey"><label for="shop-grey">Grey</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="shop-blue"><label for="shop-blue">Blue</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="shop-beige"><label for="shop-beige">Beige</label>
+                </div>
+            </div>
+
+            <h3 style="color: white; margin-bottom: -1%;">Size</h3>
+            <div class="shop-filter-buttons">
+                <div>
+                    <input type="checkbox" id="shop-x-small"><label for="shop-x-small">X-Small</label>
+                </div>
+                <div>    
+                    <input type="checkbox" id="shop-small"><label for="shop-small">Small</label>
+                </div>
+                <div>    
+                    <input type="checkbox" id="shop-medium"><label for="shop-medium">Medium</label>
+                </div>
+                <div>    
+                    <input type="checkbox" id="shop-large"><label for="shop-large">Large</label>
+                </div>
+                <div>    
+                    <input type="checkbox" id="shop-x-large"><label for="shop-x-large">X-Large</label>
+                </div>
+            </div>
+            <button type="button" style="background-color: #99aa38; margin-top: 7px;" id="apply-filters">Apply Filters</button>
+        </div>
+        <div class="shop-card" data-gender="shop-male" data-colour="shop-grey" data-size="shop-medium">
+            <a href="#"><img src="/Assets/BASICBADGESWEATphantom1_200x200.avif" alt="Dark Grey Sweater" style="width: 105px; height: 105px; margin-left: 4cm;"></a>
+            <div class="shop-container">
+                <h4 style="margin-left: 200px;"><b>Organic Cotton Dark Grey Sweater</b></h4>
+                <p style="margin-left: 200px;">£25.00</p>
+            </div>
+        </div>
+        <div class="shop-card" data-gender="shop-male" data-colour="shop-grey" data-size="shop-medium">
+            <a href="#"><img src="/Assets/picture-organic-clothing-men-s-millbrook-hoodie-grey-melange-38dcfa3643.webp" alt="Light Grey Hoodie" style="width: 105px; height: 105px; margin-left: 4cm;"></a>
+            <div class="shop-container">
+                <h4 style="margin-left: 200px;"><b>Organic Grey Hoodie</b></h4>
+                <p style="margin-left: 200px;">£30.00</p>
+            </div>
+        </div>
+        <div class="shop-card" data-gender="shop-female" data-colour="shop-beige" data-size="shop-small">
+            <a href="#"><img src="/Assets/GAURA_OLIVE_GRAY_2048x2048p.webp" alt="Organic Beige Dress" style="width: 105px; height: 105px; margin-left: 4cm;"></a>
+            <div class="shop-container">
+                <h4 style="margin-left: 200px;"><b>Organic Beige Dress</b></h4>
+                <p style="margin-left: 200px;">£45.00</p>
+            </div>
+        </div>
+        <footer class="footer-container" style="margin-top: 510px; z-index: 2;">
+            <p>Contact Us: 25789416342</p>
+            <p class="email-text">E-mail: rolsatech@rolsatechnologies.co.uk</p>
+            <p class="copyright-text">© Rolsa Technologies 2025</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>
